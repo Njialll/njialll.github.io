@@ -1,0 +1,24 @@
+{
+  "name": "njiallu.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "editor.md": "^1.5.0",
+    "requirejs": "^2.3.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Njiallu/njiallu.github.io.git"
+  },
+  "author": "Njiall",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Njiallu/njiallu.github.io/issues"
+  },
+  "homepage": "https://github.com/Njiallu/njiallu.github.io#readme"
+}

@@ -1,3 +1,15 @@
+<!-- *********************************************************************** -->
+<!--                                                                         -->
+<!--                                                      :::      ::::::::  -->
+<!-- index.html                                         :+:      :+:    :+:  -->
+<!--                                                  +:+ +:+         +:+    -->
+<!-- By: mbeilles <mbeilles@student.42.fr>          +#+  +:+       +#+       -->
+<!--                                              +#+#+#+#+#+   +#+          -->
+<!-- Created: 2018/03/12 13:26:03 by mbeilles          #+#    #+#            -->
+<!-- Updated: 2018/03/12 16:27:13 by mbeilles         ###   ########.fr      -->
+<!--                                                                         -->
+<!-- *********************************************************************** -->
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -13,137 +25,66 @@
 		<!-- UIkit JS -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-beta.40/js/uikit-icons.min.js"></script>
+
+		<!-- Marked JS -->
+		<script src="js/marked.min.js"></script>
+		<script data-main="scripts/main" src="scripts/require.js"></script>
+
+		<!--Custom Css -->
+		<link rel="stylesheet" href="custom.css" />
+
 	</head>
 	<body>
-		<div uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky">
-			<nav class="uk-background-primary uk-light uk-panel uk-navbar-container uk-navbar-transparent uk-responsive-width" uk-navbar>
-				<div class="nav-overlay uk-navbar-left">
-					<a class="uk-navbar-item uk-logo" href="#"><img height=50% width=50% src="42_logo.svg" uk-svg></a>
-					<div class="nav-overlay uk-navbar-left">
-						<a class="uk-navbar-toggle" uk-icon="icon: search; ratio: 2" uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
+		<nav class="sidebar">
+			<div class="uk-container uk-container-expand uk-padding uk-position-top-center">
+				<div class="profile-border uk-border-circle">
+					<div class="profile-picture uk-border-circle uk-background-cover uk-background-muted uk-height-medium uk-width-large uk-flex uk-flex-center uk-flex-middle">
+						<!--<div class="sk-folding-cube">-->
+							<!--<div class="sk-cube1 sk-cube"></div>-->
+							<!--<div class="sk-cube2 sk-cube"></div>-->
+							<!--<div class="sk-cube4 sk-cube"></div>-->
+							<!--<div class="sk-cube3 sk-cube"></div>-->
+						<!--</div>-->
 					</div>
-					<ul class="uk-iconnav">
-						<li><a href="#" uk-icon="icon: user; ratio: 2"></a></li>
-						<li><a href="#" uk-icon="icon: file-edit; ratio: 2"></a></li>
-						<li><a href="#" uk-icon="icon: comment; ratio: 2"></a></li>
-						<li><a href="#" uk-icon="icon: settings; ratio: 2"></a></li>
-					</ul>
 				</div>
-				<div class="nav-overlay uk-navbar-left uk-flex-1" hidden>
-					<div class="uk-navbar-item uk-width-expand">
-						<form class="uk-search uk-search-navbar uk-width-1-1">
-							<input class="uk-search-input" type="search" placeholder="Search..." autofocus>
-						</form>
+			</div>
+		</nav>
+		<div class="page">
+			<div class="uk-position-relative uk-visible-toggle uk-light uk-light" uk-slideshow="animation: pull">
+				<ul class="uk-slideshow-items uk-height-viewport">
+					<li><img src="img/rt_001.png" alt="" uk-cover></li>
+					<li><img src="img/rt_002.png" alt="" uk-cover></li>
+					<li><img src="img/rt_003.png" alt="" uk-cover></li>
+					<li><img src="img/rt_004.png" alt="" uk-cover></li>
+					<li><img src="img/rt_005.png" alt="" uk-cover></li>
+					<li><img src="img/rt_006.png" alt="" uk-cover></li>
+					<li><img src="img/rt_007.png" alt="" uk-cover></li>
+					<li><img src="img/rt_008.png" alt="" uk-cover></li>
+					<li><img src="img/rt_009.png" alt="" uk-cover></li>
+					<li><img src="img/rt_010.png" alt="" uk-cover></li>
+					<li><img src="img/rt_011.png" alt="" uk-cover></li>
+					<li><img src="img/rt_012.png" alt="" uk-cover></li>
+				</ul>
+				<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>
+				<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>
+			</div>
+			<div class="uk-container uk-padding uk-light">
+			<article class="uk-article">
+				<h1 class="uk-article-title"><a class="uk-link-reset" href="">Heading</a></h1>
+				<p class="uk-article-meta">Written by <a href="#">Super User</a> on 12 April 2012. Posted in <a href="#">Blog</a></p>
+				<p class="uk-text-lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="uk-grid-small uk-child-width-auto" uk-grid>
+					<div>
+						<a class="uk-button uk-button-text" href="#">Read more</a>
 					</div>
-					<a class="uk-navbar-toggle" uk-close uk-toggle="target: .nav-overlay; animation: uk-animation-fade" href="#"></a>
-			</nav>
-				</div>
-				<div class="uk-container uk-height-viewport uk-background-secondary uk-light uk-panel uk-width-1-1 uk-padding">
-					<div class="uk-child-width-1-3@m" uk-grid uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 25; repeat: true" uk-height-viewport"offset-top: 20%">
-						<div>
-							<div class="uk-card uk-card-default uk-card-body uk-dark">
-								<h3 class="uk-card-title">Fade</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</div>
-						<div>
-							<div class="uk-card uk-card-default uk-card-body">
-								<h3 class="uk-card-title">Fade</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</div>
-						<div>
-							<div class="uk-card uk-card-default uk-card-body">
-								<h3 class="uk-card-title">Fade</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</div>
-						<div>
-							<div class="uk-card uk-card-default uk-card-body">
-								<h3 class="uk-card-title">Fade</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</div>
-						<div>
-							<div class="uk-card uk-card-default uk-card-body">
-								<h3 class="uk-card-title">Fade</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</div>
-						<div>
-							<div class="uk-card uk-card-default uk-card-body">
-								<h3 class="uk-card-title">Fade</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</div>
-						<div>
-							<div class="uk-card uk-card-default uk-card-body">
-								<h3 class="uk-card-title">Fade</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</div>
-						<div>
-							<div class="uk-card uk-card-default uk-card-body">
-								<h3 class="uk-card-title">Fade</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</div>
-						<div>
-							<div class="uk-card uk-card-default uk-card-body">
-								<h3 class="uk-card-title">Fade</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</div>
-						<div>
-							<div class="uk-card uk-card-default uk-card-body">
-								<h3 class="uk-card-title">Fade</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</div>
-						<div>
-							<div class="uk-card uk-card-default uk-card-body">
-								<h3 class="uk-card-title">Fade</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</div>
-						<div>
-							<div class="uk-card uk-card-default uk-card-body">
-								<h3 class="uk-card-title">Fade</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</div>
-						<div>
-							<div class="uk-card uk-card-default uk-card-body">
-								<h3 class="uk-card-title">Fade</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</div>
-						<div>
-							<div class="uk-card uk-card-default uk-card-body">
-								<h3 class="uk-card-title">Fade</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</div>
-						<div>
-							<div class="uk-card uk-card-default uk-card-body">
-								<h3 class="uk-card-title">Fade</h3>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</div>
+					<div>
+						<a class="uk-button uk-button-text" href="#">5 Comments</a>
 					</div>
-					<ul class="uk-pagination uk-flex-center" uk-margin>
-						<li><a href="#"><span class="uk-margin-small-right" uk-pagination-previous></span> Previous</a></li>
-						<li><a href="#">1</a></li>
-						<li><a href="#">2</a></li>
-						<li><a href="#">3</a></li>
-						<li class="uk-active"><span>4</span></li>
-						<li><a href="#">5</a></li>
-						<li class="uk-disabled"><span>...</span></li>
-						<li><a href="#">12</a></li>
-						<li><a href="#">Next <span class="uk-margin-small-left" uk-pagination-next></span></a></li>
-					</ul>
 				</div>
+			</article>
+		</div>
+		</div>
 	</body>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="js/script.js"></script>
 </html>
